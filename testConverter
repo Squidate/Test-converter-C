@@ -1,0 +1,24 @@
+/*
+Maximus weston
+11/16/2023
+prompts user to enter a test grade and gives a letter grade with it*/
+#include <stdio.h>
+
+int main(void)
+{
+ int num;
+ printf("enter your mark: ");
+ scanf("%d", &num);
+ printf("you've entered: %d", num);
+ 
+ if (num >= 80){
+     printf(" you got an A");
+     } else if(num >= 60){
+     printf(" you got a B");
+ } else if(num >= 40){
+     printf(" you got a c");
+ } else if (num < 40){
+     printf(" you failed the exam");
+ }
+ return 0;
+}
